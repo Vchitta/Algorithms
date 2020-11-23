@@ -1,6 +1,8 @@
 package com.leetcode.Arrays;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by vidyachitta on 6/17/17.
@@ -37,6 +39,20 @@ Return 2. Because there are two triplets which sums are less than 2:
 
         return count;
     }
+    static int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+    	Map<Integer,Integer> map = new HashMap<>();
+    	
+    	for(int i=0;i<nums.length;i++){
+    		if(map.containsKey(target - nums[i] )){
+    			result[0] = map.get(target - nums[i]);
+    			result[1] =i;
+    		}
+    		map.put(nums[i], i);
+    	}
+		return result;
+        
+     }
 
     public static void main(String[] args) {
         int[] A ={1,-1,2,0,3,-2};

@@ -92,7 +92,7 @@ public class BattleArray {
 //        System.out.println(numIslands(input));
         //System.out.println(numIslands2(3,3,ints));
         Solution sol = new Solution();
-        System.out.println(sol.numIslands2(3,3,ints));
+     //   System.out.println(sol(3,3,ints));
     }
 }
 

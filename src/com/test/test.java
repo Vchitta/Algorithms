@@ -68,17 +68,21 @@ public class test {
 //        list.add(2,2);
 //        System.out.println(Arrays.toString(list.toArray()));
 
-        int[] A={1,2,3,4,5,6,7,8};
-        int[][] B=new int[2][A.length];
-        B[0]=A;
-        B[1]=A;
+//        int[] A={1,2,3,4,5,6,7,8};
+//        int[][] B=new int[2][A.length];
+//        B[0]=A;
+//        B[1]=A;
 //        List<Integer> list = new ArrayList<>();
 //        list= Arrays.asList(A);
 //        System.out.println(list.subList(0,0));
         //System.out.println(Arrays.toString(Arrays.copyOfRange(A,2,5)));
-        System.out.println(Arrays.toString(A));
-        System.out.println(B.length);
-        System.out.println(B[0].length);
+//        System.out.println(Arrays.toString(A));
+//        System.out.println(B.length);
+//        System.out.println(B[0].length);
+    	
+    	String str =",,,,,AAAAadddddd";
+    	String str1 = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+    	System.out.println(str1);
 
 
     }
